@@ -3,6 +3,11 @@
     font-weight: 800;
 }
 
+.main_info_call{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
 .main_info_wrapper{
     height: 100vh;
     width:100%;
@@ -10,12 +15,13 @@
 }
 
 .main_info_text{
-    margin-left: 15%;
+    margin: 15% 0 0 15%;
     width: 80%;
+    transform: scale(1, 1.1);
 }
 
 .main_info_img{
     width: 200%;
     height: 95vh !important;
-    clip-path: polygon(45% 0, 110% 0, 50% 200%, -15% 100%);
+    clip-path: polygon(45% 0, 110% 0, 30% 200%, 0% 100%);
 }
