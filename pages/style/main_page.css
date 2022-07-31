@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main info styles */
 .about_company_title{
     font-size: 2.7em;
     font-weight: 700;
@@ -33,7 +40,68 @@
     clip-path: polygon(45% 0, 110% 0, 30% 200%, 0% 100%);
 }
 
+/* Main catalog styles */
+
+.main_catalog_wrapper{
+    height: 90vh;
+    width:100%;
+    padding: -8px -40px 0 6%;
+}
+
+.catalog_title{
+    font-size: 2.7em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.catalog_container{
+    display: grid;
+    height: 100%;
+    
+    /*grid-template-rows: 1fr 1fr;*/
+    grid-template-columns: 1fr 1fr;
+}
+
+.catalog_box{
+    width:80%;
+    height: 20%;
+    font-size: 1.48em;
+    font-weight: 500;
+    display: flex;
+    /*background-color: bisque;*/
+}
+
+.product_number{
+    font-size: 3vw;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    width: 5vw;
+    height: 5vw;
+    margin-right: 14px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.main_catalog_link{
+    font-size: 0.7em;
+    font-weight: 100;
+}
+
+.catalog_box_left{
+    justify-self: center;
+    margin-left: 15vw;
+}
+
+.catalog_box_right{
+    justify-self: center;
+    align-self: center;
+    margin-top: 6vh;
+    margin-left: 5vw;
+}
+
 @media screen and (max-width: 1795px){
+    /* Main info media */
     .main_info_text{
         margin: 15% 0 0 5%;
     }
@@ -49,9 +117,18 @@
     .main_info_phone_number{
         margin-left: 0px;
     }
+    
+    /* Main catalog media */
+    .product_number{
+        width: 4vw;
+        height: 4vw;
+        font-size: 2.5vw;
+    }
 }
 
-@media screen and (max-width: 1200px){    
+@media screen and (max-width: 1200px){  
+    /* Main info media */
+    
     .about_company_title{
         font-size: 1.65em;
         font-weight: 800;
@@ -60,16 +137,29 @@
     .main_info_call{
         font-size: 1em;
     }
+    
+    /* Main catalog media */
+    .catalog_box{
+        width: 90%;
+        font-size: 1.2em;
+    }
+    
+    .catalog_title{
+        font-size: 2.4em;
+        font-weight: 700;
+    }
 }
 
 @media screen and (max-width: 992px){
+    /* Main info media */
     .main_info_wrapper{
         flex-direction: column;
+        height: 80vh;
     }
     
     .main_info_img{
         clip-path: unset;
-        padding-top: 1%;
+        padding-top: 28px;
         object-fit: cover;
         width:100%;
         height: 37vh !important;
@@ -82,5 +172,42 @@
     .main_info_text{
         width: 90%;
     }
+    
+    /* Main catalog media */
+    .main_catalog_wrapper{
+        margin-top: 25vh;
+    }
+    
+    .catalog_box{
+        font-size: 1em;
+        margin-left: 5vw;
+    }
 }
 
+@media screen and (max-width: 750px){  
+    /* Main catalog media */
+    .catalog_title{
+        font-size: 1.7em;
+    }
+    
+    .catalog_container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .catalog_box{
+        height: 10%;
+    }
+    
+    .catalog_box_right{
+        align-self: auto;
+        margin-top: 0vh;
+    }
+}
+
+@media screen and (max-width: 420px){
+    /* Main catalog media */
+    .main_catalog_wrapper{
+        margin-top: 40vh;
+    }
+}
