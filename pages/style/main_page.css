@@ -291,7 +291,7 @@
     /* Main info media */
     .main_info_wrapper{
         flex-direction: column;
-        height: 80vh;
+        height: 100vh;
     }
     
     .main_info_img{
