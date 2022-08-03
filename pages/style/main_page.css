@@ -291,7 +291,7 @@
     /* Main info media */
     .main_info_wrapper{
         flex-direction: column;
-        height: 122vh;
+        height: 100vh;
     }
     
     .main_info_img{
@@ -375,10 +375,17 @@
 }
 
 @media screen and (max-width: 420px){
+    /* Main info media */
+    .main_info_wrapper{
+        height: 122vh;
+    }
+    
     /* Main catalog media */
     .main_catalog_wrapper{
         margin-top: 40vh;
     }
+    
+    
 }
 
 @media screen and (max-width: 340px){
