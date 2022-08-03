@@ -30,6 +30,7 @@
 .main_info_text{
     margin: 15% 0 0 15%;
     width: 80%;
+    height: 69%;
     transform: scale(1, 1.1);
 }
 
@@ -43,7 +44,7 @@
 /* Main catalog styles */
 
 .main_catalog_wrapper{
-    height: 90vh;
+    height: 100vh;
     width:100%;
     padding: -8px -40px 0 6%;
 }
@@ -56,7 +57,7 @@
 
 .catalog_container{
     display: grid;
-    height: 100%;
+    height: 90vh;
     
     /*grid-template-rows: 1fr 1fr;*/
     grid-template-columns: 1fr 1fr;
@@ -98,7 +99,39 @@
     align-self: center;
     margin-top: 6vh;
     margin-left: 5vw;
+    height: 50%;
 }
+
+/* Other goods styles */
+.other_goods_wrapper{
+    height: 90vh;
+    width:100%;
+    padding: -8px -40px 0 6%;
+}
+
+.other_goods_text_block{
+    width:100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: 400;
+    color: white;
+    /*text-align: center;*/
+    /*margin-top: 5vh;*/
+    background: linear-gradient(white, 20%, black);
+}
+
+.other_goods_text{
+    width: 50%;
+    text-align: center;
+}
+
+.high_quality_text{
+    font-weight: 700;
+}
+
 
 @media screen and (max-width: 1795px){
     /* Main info media */
@@ -123,6 +156,11 @@
         width: 4vw;
         height: 4vw;
         font-size: 2.5vw;
+    }
+    
+    /* Other goods media */
+    .other_goods_text_block{
+        font-size: 1.5vw;
     }
 }
 
@@ -182,6 +220,15 @@
         font-size: 1em;
         margin-left: 5vw;
     }
+    
+    /* Other goods media */
+    .other_goods_text{
+        width: 80%;
+    }
+    
+    .other_goods_text_block{
+        font-size: 2.5vw;
+    }
 }
 
 @media screen and (max-width: 750px){  
@@ -202,6 +249,11 @@
     .catalog_box_right{
         align-self: auto;
         margin-top: 0vh;
+    }
+    
+    /* Other goods media */
+    .other_goods_text_block{
+        font-size: 3vw;
     }
 }
 
