@@ -279,7 +279,7 @@
     
     /* Other goods media */
     .tab label {
-        font-size:1.4vw;
+        font-size:1.37vw;
     }
     
     .tabs_text{
@@ -328,6 +328,11 @@
     .other_goods_text_block{
         font-size: 2.5vw;
     }
+    
+    .tab label {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 750px){  
@@ -355,19 +360,17 @@
         font-size: 3vw;
     }
     
-    .tabs_wrapper{
-        width: 90%;
-        margin-left: 5%;
+    .tabs_wrapper {
+        width: 99%;
+        margin-left: 1%;
     }
     
     .tab label {
-        display: flex;
-        flex-direction: column;
-        font-size:1.9vw;
+        font-size:2.2vw;
     }
     
     .tabs_text{
-        font-size: 1.7vw;
+        font-size: 2vw;
     }
 }
 
@@ -375,5 +378,32 @@
     /* Main catalog media */
     .main_catalog_wrapper{
         margin-top: 40vh;
+    }
+}
+
+@media screen and (max-width: 340px){
+    /* Main catalog media */
+    .main_catalog_wrapper{
+        margin-top: 50vh;
+    }
+    
+    /* Main info media */
+    .main_info_text {
+        width: 90%;
+        height: 100%;
+    }
+    
+    .main_info_call {
+        font-size: 0.7em;
+    }
+    
+    /* Other goods media */
+    .tab label {
+        font-size:2.7vw;
+        display: block;
+    }
+    
+    .tabs_text{
+        font-size: 2.5vw;
     }
 }
