@@ -141,6 +141,10 @@
     margin-left: 27%;
 }
 
+.tabs_text{
+    font-size: 0.7vw;
+}
+
 /* Acordeon styles */
 .tab {
     margin-bottom: 1px;
@@ -235,6 +239,19 @@
     .other_goods_text_block{
         font-size: 1.5vw;
     }
+    
+    .tabs_wrapper{
+        width: 70%;
+        margin-left: 17%;
+    }
+    
+    .tab label {
+        font-size:1.1vw;
+    }
+    
+    .tabs_text{
+        font-size: 1vw;
+    }
 }
 
 @media screen and (max-width: 1200px){  
@@ -258,6 +275,15 @@
     .catalog_title{
         font-size: 2.4em;
         font-weight: 700;
+    }
+    
+    /* Other goods media */
+    .tab label {
+        font-size:1.4vw;
+    }
+    
+    .tabs_text{
+        font-size: 1.2vw;
     }
 }
 
@@ -327,6 +353,21 @@
     /* Other goods media */
     .other_goods_text_block{
         font-size: 3vw;
+    }
+    
+    .tabs_wrapper{
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .tab label {
+        display: flex;
+        flex-direction: column;
+        font-size:1.9vw;
+    }
+    
+    .tabs_text{
+        font-size: 1.7vw;
     }
 }
 
