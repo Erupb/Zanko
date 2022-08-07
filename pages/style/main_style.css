@@ -16,6 +16,15 @@ footer{
     padding-top: 1vh;
 }
 
+.footer-link{
+    color: white;
+}
+
+.footer-link:hover{
+    color: #ff8800;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 500px){
     footer{
         font-size: 0.65rem;
