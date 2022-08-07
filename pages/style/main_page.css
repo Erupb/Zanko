@@ -104,14 +104,14 @@
 
 /* Other goods styles */
 .other_goods_wrapper{
-    height: 90vh;
+    /*height: 90vh;*/
     width:100%;
     padding: -8px -40px 0 6%;
 }
 
 .other_goods_text_block{
     width:100%;
-    height: 15%;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,6 +143,11 @@
 
 .tabs_text{
     font-size: 0.7vw;
+}
+
+.find_here_text_block{
+    text-align: center;
+    font-size: 1vw;
 }
 
 /* Acordeon styles */
@@ -249,6 +254,10 @@
         font-size:1.1vw;
     }
     
+    .find_here_text_block{
+        font-size: 1.1vw;
+    }
+    
     .tabs_text{
         font-size: 1vw;
     }
@@ -280,6 +289,10 @@
     /* Other goods media */
     .tab label {
         font-size:1.37vw;
+    }
+    
+    .find_here_text_block{
+        font-size: 1.37vw;
     }
     
     .tabs_text{
@@ -369,8 +382,16 @@
         font-size:2.2vw;
     }
     
+    .find_here_text_block{
+        font-size: 2.2vw;
+    }
+    
     .tabs_text{
         font-size: 2vw;
+    }
+    
+    .other_goods_text_block{
+        height: 10vh;
     }
 }
 
@@ -408,6 +429,10 @@
     .tab label {
         font-size:2.7vw;
         display: block;
+    }
+    
+    .find_here_text_block{
+        font-size: 2.7vw;
     }
     
     .tabs_text{
