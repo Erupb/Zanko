@@ -488,6 +488,13 @@
     }
 }
 
+
+@media screen and (max-height: 750px) and (max-width: 1350px){
+    .main_catalog_wrapper{
+        margin-top: 37vh;
+    }
+}
+
 @media screen and (max-height: 800px) and (max-width: 1100px){
     .main_catalog_wrapper{
         margin-top: 25vh;
